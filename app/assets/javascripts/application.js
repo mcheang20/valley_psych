@@ -13,4 +13,26 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap
 //= require_tree .
+
+// welcome page animations
+   $(document).scroll(function(){
+      var scar = $(this).scrollTop();
+      if (scar > 1) {
+       $(".caption-one").animate({
+           opacity: '1',
+           margin: '0 0 0 20%'
+       },800);
+     }
+   });
+
+  $(document).scroll(function () {
+     var ban = $(this).scrollTop();
+     if (ban > 200) {
+       $('.intro-img img').animate({
+         opacity: '1',
+         margin: '0 18% 0 0'
+       },800);
+     }
+  });

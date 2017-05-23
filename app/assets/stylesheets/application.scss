@@ -1,0 +1,218 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+
+ /* global styles */
+ *, *::before, *::after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+
+html {
+  position: relative;
+  min-height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+  font-size: 16px;
+}
+
+ body {
+   margin: 0 0 75px;
+ }
+
+ section::after {
+  content: '';
+  display: block;
+  clear: both;
+ }
+
+ /*begin header and navbar styles */
+ #navbar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #F8CF27; /*yellow*/
+  li {
+    width: 16.65%;
+    text-align: center;
+  }
+}
+
+.nav-links {
+  font-size: .9em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  height: 100%;
+}
+
+.sub-links {
+ text-transform: uppercase;
+}
+
+#menu1{
+  background-color: #241f20;
+  width: 100%;
+  margin: 0;
+  animation: fadeIn 1s;
+  -moz-animation: fadeIn .5s; /* Firefox */
+  -webkit-animation: fadeIn .5s; /* Safari and Chrome */
+  -o-animation: fadeIn .5s; /* Opera */
+  a {
+    color: white;
+    padding: 5%;
+  &:hover {
+    color: #F8CF27;
+    background-color: #191516;
+  }
+  }
+  li {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@keyframes fadeIn {
+ from {
+     margin: 20% 0 0 0;
+     opacity:0;
+ }
+ to {
+     margin: 0;
+     opacity:1;
+ }
+}
+
+@-webkit-@keyframes fadeIn {
+ from {
+     margin: 20% 0 0 0;
+     opacity:0;
+ }
+ to {
+     margin: 0;
+     opacity:1;
+ }
+}
+
+@media screen and (max-width: 1100px) {
+ .header-info {
+   padding: 10px 10px 0 10px;
+   font-size: 1.5em;
+   width: 100%;
+  }
+}
+
+/* top header */
+.header-info {
+  float: right;
+  font-size: 1em;
+  text-align: center;
+  padding: 5% 0 0 0;
+  list-style: none;
+  ul {
+    list-style: none;
+    display: inline-flex;
+    li {
+      text-align: center;
+      width: 200px;
+      color: #777777;
+    }
+    li:nth-child(2) {
+      border-left: 1px solid rgba(1,1,1,.1);
+      border-right: 1px solid rgba(1,1,1,.1);
+    }
+  }
+}
+
+#logo {
+  margin: 1% 0 1% 3%;
+}
+
+@media screen and (max-width: 465px) {
+  #logo {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 466px) {
+ #logo {
+   height: 80px;
+ }
+}
+
+@media screen and (min-width: 1080px) {
+ #logo {
+   height: 120px;
+ }
+}
+
+.sidebar-nav {
+  padding: 9px 0;
+}
+
+.dropdown-menu .sub-menu {
+  left: 100%;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  margin-top: -1px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-tabs .dropdown-menu, .nav-pills .dropdown-menu, .navbar .dropdown-menu {
+  margin-top: 0;
+}
+
+.navbar .sub-menu:before {
+  border-bottom: 7px solid transparent;
+  border-left: none;
+  border-right: 7px solid rgba(0, 0, 0, 0.2);
+  border-top: 7px solid transparent;
+  left: -7px;
+  top: 10px;
+}
+
+.navbar .sub-menu:after {
+  border-top: 6px solid transparent;
+  border-left: none;
+  border-right: 6px solid #fff;
+  border-bottom: 6px solid transparent;
+  left: 10px;
+  top: 11px;
+  left: -6px;
+}
+
+/* footer */
+footer {
+  color: white;
+  background-color: #28363f;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  ul {
+    float: left;
+    list-style: none;
+  }
+}
