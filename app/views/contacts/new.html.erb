@@ -1,0 +1,38 @@
+<h1>Send us a message</h1>
+<div class="container">
+  <%= form_for @contact, html: { multipart: true }, :validate=>true do |f| %>
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, class: 'form-control', placeholder: "First, Last Name", required: true  %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.text_field :email, class: 'form-control', placeholder: "Email", required: true %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label "Phone Number" %>
+      <%= f.text_field :phone, class: 'form-control', placeholder: "(xxx)xxx-xxxx", required: true %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :subject %>
+      <%= f.text_field :subject, class: 'form-control', placeholder: "", required: true %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :message %>
+      <%= f.text_area :message, rows: 8, class: 'form-control', placeholder: "Message", required: true %>
+    </div>
+
+    <div class="form-group hidden">
+      <%= f.label :nickname %>
+      <%= f.text_field :nickname, class: 'form-control', hint: "Leave this field blank" %>
+    </div>
+
+    <div class="form-group">
+      <%= f.submit "Send Message", class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+</div>
