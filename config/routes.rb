@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get "/about" => 'home#about', as: :about
 
   resources :contacts, only: [:new, :create]
+  resources :appointments, only: [:new, :create]
   root 'home#welcome'
 end

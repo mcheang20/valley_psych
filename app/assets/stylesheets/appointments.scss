@@ -1,0 +1,28 @@
+// Place all the styles related to the appointments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* appointment page */
+.appointment-group {
+  .form-control {
+    font-size: 1.1em;
+    font-weight: 200;
+  }
+  .form-group {
+    label {
+      font-size: 1.2em;
+      font-weight: 200;
+    }
+  }
+}
+
+.appointment-message {
+  padding: 15px;
+  .form-control {
+    font-size: 1.1em;
+    font-weight: 200;
+    label {
+      font-size: 1.2em;
+    }
+  }
+}
