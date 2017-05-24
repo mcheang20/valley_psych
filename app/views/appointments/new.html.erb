@@ -2,12 +2,9 @@
   <h1>Schedule an appointment</h1>
   <div class="appointment-group">
     <%= form_for @appointment, html: { multipart: true }, :validate=>true do |f| %>
-      <div class="form-group col-sm-6">
-        <%= f.text_field :firstName, class: 'form-control', placeholder: "First Name", required: true  %>
-      </div>
 
       <div class="form-group col-sm-6">
-        <%= f.text_field :lastName, class: 'form-control', placeholder: "Last Name", required: true  %>
+        <%= f.text_field :name, class: 'form-control', placeholder: "First, Last", required: true  %>
       </div>
 
       <div class="form-group col-sm-6">
@@ -15,7 +12,7 @@
       </div>
 
       <div class="form-group col-sm-6">
-        <%= f.text_field :phone, class: 'form-control', autofocus: true, placeholder: 'xxx-xxx-xxxx', required: true %>
+        <%= f.text_field :phone, class: 'form-control',placeholder: 'xxx-xxx-xxxx', required: true %>
       </div>
     </div>
 
