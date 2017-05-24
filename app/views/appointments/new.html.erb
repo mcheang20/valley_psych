@@ -16,7 +16,10 @@
 
       <div class="form-group col-sm-6">
         <%= f.label :gender %>
-        <%= select_tag(:gender, options_for_select([['Male'], ['Female']]), required: true) %>
+        <%= f.radio_button(:gender, "Male") %>
+        <%= f.label(:gender, "Male") %>
+        <%= f.radio_button(:gender, "Female") %>
+        <%= f.label(:gender, "Female") %>
       </div>
     </div>
 
