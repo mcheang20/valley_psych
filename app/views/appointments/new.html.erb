@@ -17,11 +17,6 @@
       <div class="form-group col-sm-6">
         <%= f.text_field :phone, class: 'form-control', autofocus: true, placeholder: 'xxx-xxx-xxxx', required: true %>
       </div>
-
-      <div class="form-group col-sm-6">
-        <%= f.label :gender %>
-        <%= select_tag(:gender, options_for_select([['Male'], ['Female']]))%>
-      </div>
     </div>
 
     <div class="appointment-message">
