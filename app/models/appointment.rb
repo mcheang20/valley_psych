@@ -1,4 +1,5 @@
 class Appointment < MailForm::Base
+  include MailForm::Delivery
   attribute :name,     :validate => true
   attribute :email,    :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :message
