@@ -3,12 +3,13 @@
   <div class="appointment-group">
     <%= form_for @appointment, html: { multipart: true }, :validate=>true do |f| %>
       <div class="form-group col-sm-6">
-        <%= f.text_field :first_name, class: 'form-control', placeholder: "First Name", required: true  %>
+        <%= f.text_field :firstName, class: 'form-control', placeholder: "First Name", required: true  %>
       </div>
 
       <div class="form-group col-sm-6">
-        <%= f.text_field :last_name, class: 'form-control', placeholder: "Last Name", required: true  %>
+        <%= f.text_field :lastName, class: 'form-control', placeholder: "Last Name", required: true  %>
       </div>
+
 
       <div class="form-group col-sm-6">
         <%= f.text_field :email, class: 'form-control', placeholder: "Email", required: true %>
@@ -25,7 +26,7 @@
 
       <div class="form-group col-sm-6">
         <%= f.label "Appointment Date Requested" %>
-        <%= date_field(:appointment, :date) %>
+        <%= date_field(:date, true) %>
       </div>
     </div>
 
