@@ -1,8 +1,7 @@
 <div class="container">
   <h1>Schedule an appointment</h1>
-  <div class="appointment-group">
     <%= form_for @appointment, html: { multipart: true }, :validate=>true do |f| %>
-
+    <div class="appointment-group">
       <div class="form-group col-sm-6">
         <%= f.text_field :name, class: 'form-control', placeholder: "First, Last", required: true  %>
       </div>
@@ -13,6 +12,11 @@
 
       <div class="form-group col-sm-6">
         <%= f.text_field :phone, class: 'form-control',placeholder: 'xxx-xxx-xxxx', required: true %>
+      </div>
+
+      <div class="form-group col-sm-6">
+        <%= f.label :gender %>
+        <%= select_tag(:gender, options_for_select([['Male'], ['Female']]), required: true) %>
       </div>
     </div>
 
