@@ -20,12 +20,15 @@
 
       <div class="form-group col-sm-6">
         <%= f.label :gender %>
-        <%= select_tag(:gender, options_for_select([['Male', 1], ['Female', 2]]))%>
+        <%= radio_button_tag(:gender, "male") %>
+        <%= label_tag(:gender, "Male") %>
+        <%= radio_button_tag(:gender, "female") %>
+        <%= label_tag(:gender, "Female") %>
       </div>
 
       <div class="form-group col-sm-6">
         <%= f.label "Appointment Date Requested" %>
-        <%= f.date_field :date%>
+        <%= f.date_field(:date)%>
       </div>
     </div>
 
