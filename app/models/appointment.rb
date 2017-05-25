@@ -13,7 +13,7 @@ class Appointment < MailForm::Base
     {
       :subject => "New Appointment Request",
       :to => "cheangmatt@gmail.com",
-      :from => %("#{first}" "#{last}" "<#{email}>)
+      :from => %("#{first}" "#{last}" <#{email}>)
     }
   end
 end
