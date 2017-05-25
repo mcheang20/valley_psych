@@ -11,7 +11,7 @@ class Contact < MailForm::Base
     {
       :subject => "New Message",
       :to => "cheangmatt@gmail.com",
-      :from => %("#{first}" "#{last}" <#{email}>)
+      :from => %("#{first} #{last}" <#{email}>)
     }
   end
 end
