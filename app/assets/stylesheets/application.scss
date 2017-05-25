@@ -231,3 +231,28 @@ footer {
     list-style: none;
   }
 }
+
+/* contact forms */
+.contact-group {
+  .form-control {
+    font-size: 1.1em;
+    font-weight: 200;
+  }
+  .form-group {
+    label {
+      font-size: 1.2em;
+      font-weight: 200;
+    }
+  }
+}
+
+.message-group {
+  padding: 15px;
+  .form-control {
+    font-size: 1.1em;
+    font-weight: 200;
+    label {
+      font-size: 1.2em;
+    }
+  }
+}

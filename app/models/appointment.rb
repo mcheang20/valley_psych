@@ -1,6 +1,7 @@
 class Appointment < MailForm::Base
-  attribute :name,     :validate => true
-  attribute :email,    :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
+  attribute :firstName,     :validate => true
+  attribute :lastName,      :validate => true
+  attribute :email,        :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :message
   attribute :phone
   attribute :subject
@@ -12,7 +13,7 @@ class Appointment < MailForm::Base
     {
       :subject => "New Appointment Request",
       :to => "cheangmatt@gmail.com",
-      :from => %("#{name}" <#{email}>)
+      :from => %("#{firstName}" "#{lastName}" "<#{email}>)
     }
   end
 end

@@ -1,29 +1,38 @@
 <h1>Send us a message</h1>
 <div class="container">
   <%= form_for @contact, html: { multipart: true }, :validate=>true do |f| %>
-    <div class="form-group">
-      <%= f.label :name %>
-      <%= f.text_field :name, class: 'form-control', placeholder: "First, Last Name", required: true  %>
+    <div class="contact-group">
+      <div class="form-group col-sm-6">
+        <%= f.label "First Name" %>
+        <%= f.text_field :firstName, class: 'form-control', placeholder: "First Name", required: true  %>
+      </div>
+
+      <div class="form-group col-sm-6">
+        <%= f.label "Last Name" %>
+        <%= f.text_field :lastName, class: 'form-control', placeholder: "Last Name", required: true  %>
+      </div>
+
+      <div class="form-group col-sm-6">
+        <%= f.label :email %>
+        <%= f.text_field :email, class: 'form-control', placeholder: "Email", required: true %>
+      </div>
+
+      <div class="form-group col-sm-6">
+        <%= f.label "Phone Number" %>
+        <%= f.text_field :phone, class: 'form-control', placeholder: "(xxx)xxx-xxxx", required: true %>
+      </div>
     </div>
 
-    <div class="form-group">
-      <%= f.label :email %>
-      <%= f.text_field :email, class: 'form-control', placeholder: "Email", required: true %>
-    </div>
+    <div class="message-group">
+      <div class="form-group">
+        <%= f.label :subject %>
+        <%= f.text_field :subject, class: 'form-control', placeholder: "", required: true %>
+      </div>
 
-    <div class="form-group">
-      <%= f.label "Phone Number" %>
-      <%= f.text_field :phone, class: 'form-control', placeholder: "(xxx)xxx-xxxx", required: true %>
-    </div>
-
-    <div class="form-group">
-      <%= f.label :subject %>
-      <%= f.text_field :subject, class: 'form-control', placeholder: "", required: true %>
-    </div>
-
-    <div class="form-group">
-      <%= f.label :message %>
-      <%= f.text_area :message, rows: 8, class: 'form-control', placeholder: "Message", required: true %>
+      <div class="form-group">
+        <%= f.label :message %>
+        <%= f.text_area :message, rows: 8, class: 'form-control', placeholder: "Message", required: true %>
+      </div>
     </div>
 
     <div class="form-group hidden">
