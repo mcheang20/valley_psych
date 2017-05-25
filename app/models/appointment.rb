@@ -5,6 +5,7 @@ class Appointment < MailForm::Base
   attribute :phone
   attribute :subject
   attribute :gender
+  attribute :date
   attribute :nickname,  :captcha  => true
 
   def headers

@@ -21,6 +21,11 @@
         <%= f.radio_button(:gender, "Female") %>
         <%= f.label(:gender, "Female") %>
       </div>
+
+      <div class="form-group col-sm-6">
+        <%= f.label "Appointment Date" %>
+        <%= f.date_field :date %>
+      </div>
     </div>
 
     <div class="appointment-message">
