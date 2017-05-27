@@ -35,22 +35,36 @@ $(document).ready(function(){
 //    );
 //});
 
-  $(document).scroll(function(){
-      var scar = $(this).scrollTop();
-      if (scar >= 0) {
-       $(".caption-one").animate({
-           opacity: '1',
-           margin: '0 0 0 20%'
-       },800);
-     }
-   });
+$(document).scroll(function(){
+  if($(window).width() >= 1100){
+    var scar = $(this).scrollTop();
+    if (scar >= 0) {
+      $(".caption-one").animate({
+        opacity: '1',
+        margin: '0 0 0 20%'
+      },800);
+    }
+  } else {
+    $(".caption-one").animate({
+      opacity: '1',
+      margin: '0'
+    },400);
+  }
+});
 
-  $(document).scroll(function () {
-     var ban = $(this).scrollTop();
-     if (ban > 200) {
-       $('.intro-img img').animate({
-         opacity: '1',
-         margin: '0 18% 0 0'
-       },800);
-     }
-  });
+$(document).scroll(function () {
+  if($(window).width() >= 1100){
+    var ban = $(this).scrollTop();
+    if (ban > 200) {
+      $('.intro-img img').animate({
+        opacity: '1',
+        margin: '0 10% 0 0'
+      },800);
+    }
+  } else {
+    $('.intro-img img').animate({
+      opacity: '1',
+      margin: '0'
+    },900);
+  }
+});
