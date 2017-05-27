@@ -17,6 +17,10 @@
  @import "bootstrap";
  @import "font-awesome-sprockets";
  @import "font-awesome";
+ @import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
+ @import url('https://fonts.googleapis.com/css?family=Oxygen:300,400');
+
+ $primary-color: #F8CF27; //yellow
 
  /* global styles */
  *, *::before, *::after {
@@ -33,6 +37,7 @@ html {
 
  body {
    margin: 0 0 75px;
+   font-family: 'Oxygen', sans-serif;
  }
 
  section::after {
@@ -42,11 +47,17 @@ html {
  }
 
  /*begin header and navbar styles */
+.header-image {
+  img {
+    height: 120px;
+    margin: 10px;
+  }
+}
  #navbar {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  background: #F8CF27; /*yellow*/
+  background: $primary-color;
   li {
     width: 16.65%;
     text-align: center;
@@ -77,7 +88,7 @@ html {
     color: white;
     padding: 5%;
   &:hover {
-    color: #F8CF27;
+    color: $primary-color;
     background-color: #191516;
   }
   }
@@ -209,11 +220,10 @@ html {
   padding: 15px;
   position: absolute;
   z-index: 100;
-  background: rgba(11, 233, 203, .8);
-  border-radius: 3px;
+  background: rgba(50,54,63,.85);
   width: 100%;
   text-align: center;
-  color: white;
+  color: $primary-color;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: .5px;
@@ -253,6 +263,18 @@ footer {
     font-weight: 200;
     label {
       font-size: 1.2em;
+    }
+  }
+  .form-group {
+    .btn {
+      background-color: $primary-color;
+      color: white;
+      font-size: 1.2em;
+      transition: .5s;
+      &:hover{
+        transform: scale(1.1);
+        background-color: #e4bc19;
+      }
     }
   }
 }

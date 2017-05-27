@@ -16,10 +16,28 @@
 //= require bootstrap
 //= require_tree .
 
+// alert wrapper
+$(document).ready(function(){
+  setTimeout(function(){
+    $('.alert-wrapper').fadeOut("slow", function(){
+      $(this).remove();
+    })
+  }, 5000);
+});
+
 // welcome page animations
-   $(document).scroll(function(){
+// $(function() {
+ //    $(".caption-one").animate({
+//      opacity: '1',
+//      margin: '0 0 0 20%',
+//      top: '+=100'
+//    }, 800, function() {}
+//    );
+//});
+
+  $(document).scroll(function(){
       var scar = $(this).scrollTop();
-      if (scar > 1) {
+      if (scar >= 0) {
        $(".caption-one").animate({
            opacity: '1',
            margin: '0 0 0 20%'

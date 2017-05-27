@@ -1,6 +1,10 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+ $primary-color: #F8CF27; //yellow
+ $primary-font: 'Poppins', sans-serif;
+
 /* first section */
 .first-content {
   background-image: url("https://www.healthdoc.ca/wp-content/uploads/Psychiatrists-Kingston1.jpg");
@@ -14,6 +18,7 @@
   padding: 4%;
   height: 100%;
   opacity: 0;
+  font-family: 'Poppins', sans-serif;
   h1 {
     font-size: 4.5em;
   }
@@ -24,8 +29,8 @@
     padding: 10px;
     transition: .5s;
     &:hover {
-      background-color: #F8CF27;
-      border-color: #F8CF27;
+      background-color: $primary-color;
+      border-color: $primary-color;
       transform: scale(1.1);
     }
     &:hover a {
@@ -71,7 +76,7 @@
 /* begin home info top section */
 .home-info {
   min-height: 450px;
-  background: #F8CF27;
+  background: $primary-color;
   text-align: center;
   padding: 10px;
   color: white;
@@ -120,7 +125,7 @@
     color: white;
     &:hover {
       text-decoration: none;
-      color: #F8CF27;
+      color: $primary-color;
     }
   }
 }

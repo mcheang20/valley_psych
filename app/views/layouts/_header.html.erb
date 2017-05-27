@@ -1,5 +1,5 @@
 <div class="header-image">
-    <%= link_to image_tag('logo.png'), "#" %>
+    <%= link_to image_tag('logo.png'), root_path %>
     <div class="header-info">
       <ul>
         <li>1011 Coffee Rd. </br><span style="color:#F8CF27;">Modesto, CA 95355</span></li>
@@ -17,6 +17,8 @@
       <ul class="dropdown-menu" id="menu1">
         <li><%= link_to "Action", "#", class:"sub-links"%></li>
         <li><%= link_to "Another Action", "#", class:"sub-links"%></li>
+        <li><%= link_to "Action Three", "#", class:"sub-links"%></li>
+        <li><%= link_to "Action Four", "#", class:"sub-links"%></li>
       </ul>
     </li>
     <li><%= link_to "Payment", payment_path, class:"nav-links" %></li>
