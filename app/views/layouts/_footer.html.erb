@@ -1,7 +1,27 @@
-<footer>
-  <ul>
-    <li>Copyright &copy; Valley Psychiatric Associates</li>
-    <li><%= link_to "Privacy Policy", "#"%></li>
-    <li><%= link_to "About", "#"%></li>
-  </ul>
+<footer class="footer">
+  <div>
+    <aside>
+      <%= link_to image_tag('logo.png'), root_path %>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta pretium mi,
+          a maximus tellus tincidunt quis.
+      </p>
+    </aside>
+
+    <aside>
+      <h3>Links</h3>
+      <ul>
+        <li><%= link_to "Privacy Policy", "#"%></li>
+        <li><%= link_to "About", "#"%></li>
+      </ul>
+    </aside>
+
+    <aside>
+      <h3>Contact Us</h3>
+      <ul>
+        <li>1011 Coffee Rd. <span style="color:#F8CF27;">Modesto, CA 95355</span></li>
+        <li>(209) 524-1900 <span style="color:#F8CF27;">info@comapny.com</span></li>
+        <li>8AM - 6PM <span style="color:#F8CF27;">Monday - Saturday</li>
+      </ul>
+    </aside>
+</div>
 </footer>
