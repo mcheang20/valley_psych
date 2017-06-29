@@ -90,7 +90,6 @@ html {
   }
 }
 
-
 .nav-links {
   font-size: .9em;
   font-weight: 400;
@@ -146,7 +145,7 @@ html {
      opacity:1;
  }
 }
-
+/*------------------------------*/
 /* top header */
 .header-info {
   float: right;
@@ -246,7 +245,7 @@ html {
   top: 11px;
   left: -6px;
 }
-
+/*------------------------------*/
 /* alert banner */
 .alert-wrapper {
   padding: 15px;
@@ -260,7 +259,7 @@ html {
   font-size: 16px;
   letter-spacing: .5px;
 }
-
+/*------------------------------*/
 /* footer */
 footer {
   color: white;
@@ -303,7 +302,7 @@ footer {
     }
   }
 }
-
+/*------------------------------*/
 /* contact forms */
 .contact-group {
   .form-control {
@@ -338,5 +337,38 @@ footer {
         background-color: #e4bc19;
       }
     }
+  }
+}
+/*------------------------------*/
+/* mobile menu */
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width:450px){
+  .mobile-menu {
+    display: block;
+    color: white;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background: #F8CF27;
+    position: absolute; top: 181px; left: 10px;
+  }
+  .nav{
+    display: block;
+    overflow: hidden;
+    height: 0;
+    padding: 3% 0;
+  }
+  #menu1 {
+    left: 110px;
+    top: 0;
+    width: 180px;
   }
 }

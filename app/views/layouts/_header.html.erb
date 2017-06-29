@@ -1,31 +1,32 @@
 <div class="header-image">
-    <%= link_to image_tag('logo.png'), root_path %>
-    <div class="header-info">
-      <aside>1011 Coffee Rd. </br><span style="color:#F8CF27;">Modesto, CA 95355</span></aside>
-      <aside>(209) 524-1900 </br><span style="color:#F8CF27;">info@comapny.com</span></aside>
-      <aside>8AM - 6PM </br><span style="color:#F8CF27;">Monday - Saturday</span></aside>
-    </div>
+  <%= link_to image_tag('logo.png'), root_path %>
+  <div class="header-info">
+    <aside>1011 Coffee Rd. </br><span style="color:#F8CF27;">Modesto, CA 95355</span></aside>
+    <aside>(209) 524-1900 </br><span style="color:#F8CF27;">info@comapny.com</span></aside>
+    <aside>8AM - 6PM </br><span style="color:#F8CF27;">Monday - Saturday</span></aside>
   </div>
+  <a class="mobile-menu" onclick="clickFunction()"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a>
+</div>
   <!-- begin navbar -->
-  <ul class="nav" id="navbar">
-    <li class="active"><%= link_to"Welcome", home_welcome_path, class:"nav-links"%></li>
-    <li><%= link_to"Staff", staff_path, class:"nav-links"%></li>
-    <li class="dropdown">
-      <%= link_to "Insurance", "#", class:"nav-links"%>
-      <ul class="dropdown-menu" id="menu1">
-        <li><%= link_to "Action", "#", class:"sub-links"%></li>
-        <li><%= link_to "Another Action", "#", class:"sub-links"%></li>
-        <li><%= link_to "Action Three", "#", class:"sub-links"%></li>
-        <li><%= link_to "Action Four", "#", class:"sub-links"%></li>
-      </ul>
-    </li>
-    <li><%= link_to "Payment", payment_path, class:"nav-links" %></li>
-    <li class="dropdown">
-      <%= link_to "Contact", "#", class:"nav-links"%>
-      <ul class="dropdown-menu" id="menu1">
-        <li><%= link_to "Make an appointment", new_appointment_path, class:"sub-links"%></li>
-        <li><%= link_to "Contact Us", new_contact_path, class:"sub-links" %></li>
-      </ul>
-    </li>
-    <li><%= link_to "About", about_path, class:"nav-links" %></li>
+<ul class="nav" id="navbar">
+  <li class="active"><%= link_to"Welcome", home_welcome_path, class:"nav-links"%></li>
+  <li><%= link_to"Staff", staff_path, class:"nav-links"%></li>
+  <li class="dropdown">
+  <%= link_to "Insurance", "#", class:"nav-links"%>
+  <ul class="dropdown-menu" id="menu1">
+    <li><%= link_to "Action", "#", class:"sub-links"%></li>
+    <li><%= link_to "Another Action", "#", class:"sub-links"%></li>
+    <li><%= link_to "Action Three", "#", class:"sub-links"%></li>
+    <li><%= link_to "Action Four", "#", class:"sub-links"%></li>
   </ul>
+  </li>
+  <li><%= link_to "Payment", payment_path, class:"nav-links" %></li>
+  <li class="dropdown">
+    <%= link_to "Contact", "#", class:"nav-links"%>
+    <ul class="dropdown-menu" id="menu1">
+      <li><%= link_to "Make an appointment", new_appointment_path, class:"sub-links"%></li>
+      <li><%= link_to "Contact Us", new_contact_path, class:"sub-links" %></li>
+    </ul>
+  </li>
+  <li><%= link_to "About", about_path, class:"nav-links" %></li>
+</ul>

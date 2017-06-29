@@ -5,6 +5,10 @@
  $primary-color: #F8CF27; //yellow
  $primary-font: 'Poppins', sans-serif;
 
+.hidden {
+  display: hidden;
+}
+
 /* first section */
 .first-content {
   background-image: url("https://www.healthdoc.ca/wp-content/uploads/Psychiatrists-Kingston1.jpg");
@@ -15,7 +19,7 @@
 
 .caption-one {
   margin: 0;
-  padding: 4%;
+  padding: 4% 0 0 22%;
   height: 100%;
   opacity: 0;
   font-family: 'Poppins', sans-serif;
@@ -65,6 +69,7 @@
   .caption-one {
     margin: 0;
     text-align: center;
+    padding: 4% 10% 0 10%;
   }
 }
 
