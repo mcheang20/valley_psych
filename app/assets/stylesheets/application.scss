@@ -17,8 +17,8 @@
  @import "bootstrap";
  @import "font-awesome-sprockets";
  @import "font-awesome";
- @import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
- @import url('https://fonts.googleapis.com/css?family=Oxygen:300,400');
+ @import "animate.css";
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
  $primary-color: #F8CF27; //yellow
 
@@ -35,9 +35,25 @@ html {
   font-size: 16px;
 }
 
- body {
-   font-family: 'Oxygen', sans-serif;
- }
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+a {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 
  section::after {
   content: '';
@@ -55,18 +71,16 @@ html {
 
 @media screen and (max-width: 390px) {
   .header-image {
-    text-align: center;
     img{
-      height: 60px;
+      height: 55px;
     }
   }
 }
 
 @media screen and (max-width: 700px) and (min-width: 391px) {
   .header-image {
-    text-align: center;
     img {
-      height: 80px;
+      height: 65px;
     }
   }
 }
@@ -76,6 +90,7 @@ html {
   flex-wrap: wrap;
   width: 100%;
   background: $primary-color;
+  font-size: 1.3em;
   li {
     width: 16.65%;
     text-align: center;
@@ -149,7 +164,7 @@ html {
 /* top header */
 .header-info {
   float: right;
-  font-size: 1em;
+  font-size: 1.1em;
   text-align: center;
   display: flex;
   padding: 5% 5% 0 0;
@@ -163,9 +178,9 @@ html {
   }
 }
 
-@media screen and (max-width: 460px){
+@media screen and (max-width: 550px){
   .header-info{
-    display: block;
+    display: none;
     aside:nth-child(2) {
       border-left: none;
       border-right: none;
@@ -345,29 +360,21 @@ footer {
   display: none;
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:550px){
   .mobile-menu {
     display: block;
-    color: white;
-    padding: 8px;
-    width: 40px;
-    height: 40px;
-    border-top: 2px solid white;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    background: #F8CF27;
-    position: absolute; top: 181px; left: 10px;
+    color: #F8CF27;
+    float: right;
+    padding: 7% 6% 0 0;
   }
-  .nav{
+  #navbar{
     display: block;
     overflow: hidden;
-    height: 0;
     padding: 3% 0;
+    text-align: -webkit-center;
   }
   #menu1 {
-    left: 110px;
+    left: 100%;
     top: 0;
     width: 180px;
   }

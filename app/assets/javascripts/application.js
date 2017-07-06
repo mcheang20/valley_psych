@@ -24,7 +24,6 @@ $(document).ready(function(){
   }, 5000);
 });
 
-// welcome page animations
 // $(function() {
  //    $(".caption-one").animate({
 //      opacity: '1',
@@ -51,6 +50,7 @@ $(document).ready(function(){
 //  }
 //});
 
+// welcome page animations
 $(document).scroll(function () {
   if($(window).width() >= 1100){
     var ban = $(this).scrollTop();
@@ -81,17 +81,9 @@ $(document).scroll(function(){
 
 //mobile menu
 $(document).ready(function(){
-  if($(window).width() <=450){
-      $('.mobile-menu, .nav').hover(function(){
-      $('.nav').css({'height': 'auto', 'display': 'block'});
-    }, function(){
-      $('.nav').css('height', '0');
+  if($(window).width() <=550){
+    $(".mobile-menu").click(function(){
+      $("#navbar").slideToggle();
     })
   }
 });
-
-//function clickFunction(){
-//  $('.mobile-menu, .nav').click(function(){
-//   $('.nav').css({'height': 'auto', 'display': 'block'});
-//  })
-//};

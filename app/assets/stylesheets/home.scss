@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
  $primary-color: #F8CF27; //yellow
- $primary-font: 'Poppins', sans-serif;
 
 .hidden {
   display: hidden;
@@ -22,9 +21,8 @@
   padding: 4% 0 0 22%;
   height: 100%;
   opacity: 0;
-  font-family: 'Poppins', sans-serif;
   h1 {
-    font-size: 4.5em;
+    font-size: 6em;
   }
   button {
     background: none;
@@ -87,10 +85,11 @@
   padding: 0 3%;
   h1 {
     margin: 0;
+    font-size: 2.5em;
   }
   p {
     color: #666666;
-    letter-spacing: .4px;
+    font-size: 1.3em;
   }
 }
 
@@ -141,9 +140,8 @@
   padding: 10px;
   color: white;
   p {
-    font-size: 1.05em;
+    font-size: 1.2em;
     font-weight: 200;
-    letter-spacing: .4px;
   }
   h1 {
     font-size: 3.2em;
@@ -153,7 +151,7 @@
   }
   h2 {
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 400;
   }
 }

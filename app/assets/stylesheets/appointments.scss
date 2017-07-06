@@ -5,4 +5,20 @@
 /* appointment page */
 .appointment-page {
   padding-bottom: 5%;
+  h1{
+    font-size: 2.5em;
+  }
+  p{
+    font-size: 1.3em;
+  }
+  .contact-group{
+    input {
+      font-size: 1.3em;
+    }
+  }
+  .message-group {
+    textarea{
+      font-size: 1.3em;
+    }
+  }
 }
