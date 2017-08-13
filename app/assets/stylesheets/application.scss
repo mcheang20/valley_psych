@@ -51,6 +51,11 @@ h3 {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+p {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2em;
+}
+
 a {
   font-family: 'Open Sans Condensed', sans-serif;
 }
@@ -91,8 +96,9 @@ a {
   width: 100%;
   background: $primary-color;
   font-size: 1.3em;
+  justify-content: center;
   li {
-    width: 16.65%;
+    width: 14%;
     text-align: center;
   }
 }
@@ -106,11 +112,11 @@ a {
 }
 
 .nav-links {
+  height: 100%;
   font-size: .9em;
   font-weight: 400;
   text-transform: uppercase;
   color: white;
-  height: 100%;
 }
 
 .sub-links {
@@ -128,10 +134,10 @@ a {
   a {
     color: white;
     padding: 5%;
-  &:hover {
-    color: $primary-color;
-    background-color: #191516;
-  }
+    &:hover {
+      color: $primary-color;
+      background-color: #191516;
+    }
   }
   li {
     width: 100%;
@@ -140,14 +146,14 @@ a {
 }
 
 @keyframes fadeIn {
- from {
-     margin: 20% 0 0 0;
-     opacity:0;
- }
- to {
-     margin: 0;
-     opacity:1;
- }
+  from {
+    margin: 20% 0 0 0;
+    opacity:0;
+  }
+  to {
+    margin: 0;
+    opacity:1;
+  }
 }
 
 @-webkit-@keyframes fadeIn {
@@ -207,15 +213,15 @@ a {
 }
 
 @media screen and (min-width: 466px) {
- #logo {
-   height: 80px;
- }
+  #logo {
+    height: 80px;
+  }
 }
 
 @media screen and (min-width: 1080px) {
- #logo {
-   height: 120px;
- }
+  #logo {
+    height: 120px;
+  }
 }
 
 .sidebar-nav {
@@ -271,7 +277,7 @@ a {
   text-align: center;
   color: $primary-color;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
   letter-spacing: .5px;
 }
 /*------------------------------*/
