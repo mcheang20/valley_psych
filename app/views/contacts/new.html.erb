@@ -7,24 +7,25 @@
   <div class="location-aside">
     <aside>
       <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-      <p>1011 Coffee Rd. </br><span style="color:#F8CF27;">Modesto, CA 95355</span></p>
+      <p>1011 Coffee Rd. </br><span class="red">Modesto, CA 95355</span></p>
     </aside>
     <aside>
       <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-      <p>8AM - 6PM </br><span style="color:#F8CF27;">Monday - Saturday</p>
+      <p>8AM - 6PM </br><span class="red">Monday - Saturday</p>
     </aside>
     <aside>
       <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-      <p>Phone </br><span style="color:#F8CF27;">(209) 524-1900</p>
+      <p>Phone </br><span class="red">(209) 524-1900</p>
     </aside>
     <aside>
       <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-      <p>Email </br><span style="color:#F8CF27;">info@comapny.com</span></p>
+      <p>Email </br><span class="red">info@comapny.com</span></p>
     </aside>
   </div>
   <div>
     <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.6404615639563!2d-120.97814604914319!3d37.657655979681735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8090541aadacf4f7%3A0x2577385afa3c4c57!2s1011+Coffee+Rd%2C+Modesto%2C+CA+95355!5e0!3m2!1sen!2sus!4v1489617920530" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
+  
   <h1>Send Us A Message</h1>
   <%= form_for @contact, html: { multipart: true }, :validate=>true do |f| %>
     <div class="contact-group">

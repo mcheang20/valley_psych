@@ -87,3 +87,21 @@ $(document).ready(function(){
     })
   }
 });
+
+//mobile sidebar
+$(document).ready(function(){
+  if($(window).width() <=550){
+    $("#sidebarBtn").click(function(){
+      $("#sidebarDropdown").slideToggle();
+    })
+  }
+});
+
+// link highlight
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current-link');
+    }
+  });
+});

@@ -20,7 +20,7 @@
  @import "animate.css";
  @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
- $primary-color: #F8CF27; //yellow
+ $primary-color: #ff3131; //red
 
  /* global styles */
  *, *::before, *::after {
@@ -35,36 +35,25 @@ html {
   font-size: 16px;
 }
 
-body {
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-h1 {
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-h2 {
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
-h3 {
+body, h1, h2, h3, h4, p, a {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
 p {
-  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.2em;
 }
 
-a {
-  font-family: 'Open Sans Condensed', sans-serif;
-}
-
- section::after {
+section::after {
   content: '';
   display: block;
   clear: both;
- }
+}
+
+#navbar a.current-link,
+.sidebar a.current-link {
+  background-color: #2ac1ac;
+  color: white;
+}
 
  /*begin header and navbar styles */
 .header-image {
@@ -76,7 +65,7 @@ a {
 
 @media screen and (max-width: 390px) {
   .header-image {
-    img{
+    img {
       height: 55px;
     }
   }
@@ -90,7 +79,7 @@ a {
   }
 }
 
- #navbar {
+#navbar {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -103,7 +92,7 @@ a {
   }
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width: 500px){
   #navbar {
     li {
       width: 32.65%;
@@ -133,7 +122,6 @@ a {
   -o-animation: fadeIn .5s; /* Opera */
   a {
     color: white;
-    padding: 5%;
     &:hover {
       color: $primary-color;
       background-color: #191516;
@@ -148,11 +136,11 @@ a {
 @keyframes fadeIn {
   from {
     margin: 20% 0 0 0;
-    opacity:0;
+    opacity: 0;
   }
   to {
     margin: 0;
-    opacity:1;
+    opacity: 1;
   }
 }
 
@@ -323,6 +311,12 @@ footer {
     }
   }
 }
+
+.footer-links {
+  a {
+    color: white;
+  }
+}
 /*------------------------------*/
 /* contact forms */
 .contact-group {
@@ -366,22 +360,28 @@ footer {
   display: none;
 }
 
-@media screen and (max-width:550px){
+@media screen and (max-width: 550px){
+  .header-image {
+    border-bottom: 1px solid rgba(1,1,1,.2);
+  }
   .mobile-menu {
     display: block;
-    color: #F8CF27;
+    color: $primary-color;
     float: right;
     padding: 7% 6% 0 0;
   }
-  #navbar{
-    display: block;
+  #navbar {
+    display: none;
     overflow: hidden;
-    padding: 3% 0;
+    padding: 10% 0;
     text-align: -webkit-center;
+    position: absolute;
+    z-index: 100;
+      li {
+        width: 50%;
+      }
   }
   #menu1 {
-    left: 100%;
-    top: 0;
-    width: 180px;
+    position: absolute;
   }
 }

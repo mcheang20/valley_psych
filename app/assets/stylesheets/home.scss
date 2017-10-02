@@ -2,15 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
- $primary-color: #F8CF27; //yellow
+ $primary-color: #ff3131; //red
 
 .hidden {
   display: hidden;
 }
 
+.red {
+  color: #ff3131;
+}
+
 /* first section */
 .first-content {
-  background-image: url("https://www.healthdoc.ca/wp-content/uploads/Psychiatrists-Kingston1.jpg");
+  background-image: url("stock_img.jpg");
   background-size: cover;
   filter: grayscale(50%);
   height: 400px;

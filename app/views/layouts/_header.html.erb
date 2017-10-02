@@ -1,26 +1,32 @@
 <div class="header-image">
   <%= link_to image_tag('logo.png'), root_path %>
   <a class="mobile-menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+
   <div class="header-info">
-    <aside>1011 Coffee Rd. <br><span style="color:#F8CF27;">Modesto, CA 95355</span></aside>
-    <aside>(209) 524-1900 <br><span style="color:#F8CF27;">info@comapny.com</span></aside>
-    <aside>8AM - 6PM <br><span style="color:#F8CF27;">Monday - Saturday</span></aside>
+    <aside>1011 Coffee Rd. <br><span class="red">Modesto, CA 95355</span></aside>
+    <aside>(209) 524-1900 <br><span class="red">info@comapny.com</span></aside>
+    <aside>8AM - 6PM <br><span class="red">Monday - Saturday</span></aside>
   </div>
 </div>
+
   <!-- begin navbar -->
 <ul class="nav" id="navbar">
   <li class="active"><%= link_to"Welcome", home_welcome_path, class:"nav-links"%></li>
   <li><%= link_to"Staff", staff_path, class:"nav-links"%></li>
   <li class="dropdown">
-  <%= link_to "Insurance", "#", class:"nav-links"%>
-  <ul class="dropdown-menu" id="menu1">
-    <li><%= link_to "Action", "#", class:"sub-links"%></li>
-    <li><%= link_to "Another Action", "#", class:"sub-links"%></li>
-    <li><%= link_to "Action Three", "#", class:"sub-links"%></li>
-    <li><%= link_to "Action Four", "#", class:"sub-links"%></li>
-  </ul>
+    <%= link_to "Our Services", "#", class:"nav-links"%>
+    <ul class="dropdown-menu" id="menu1">
+      <li><%= link_to "Behavioral Therapy", behavioral_path, class:"sub-links"%></li>
+      <li><%= link_to "Group Therapy", group_path, class:"sub-links"%></li>
+      <li><%= link_to "Anxiety Treatment", anxiety_path, class:"sub-links"%></li>
+      <li><%= link_to "Family Therapy", family_path, class:"sub-links"%></li>
+      <li><%= link_to "Stress Management", stress_path, class:"sub-links"%></li>
+      <li><%= link_to "Couples Therapy", couples_path, class:"sub-links"%></li>
+    </ul>
   </li>
-  <li><%= link_to "Payment", payment_path, class:"nav-links" %></li>
+
+  <li><%= link_to "Insurance and Payment", payment_path, class:"nav-links" %></li>
+
   <li class="dropdown">
     <%= link_to "Contact", "#", class:"nav-links"%>
     <ul class="dropdown-menu" id="menu1">
@@ -28,5 +34,6 @@
       <li><%= link_to "Contact Us", new_contact_path, class:"sub-links" %></li>
     </ul>
   </li>
-  <li><%= link_to "About", about_path, class:"nav-links" %></li>
+  
+  <li><%= link_to "About Us", about_path, class:"nav-links" %></li>
 </ul>

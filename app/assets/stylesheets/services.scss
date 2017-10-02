@@ -1,0 +1,76 @@
+// Place all the styles related to the services controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.services-page {
+  padding: 0 10%;
+  width: 100%;
+  min-height: 500px;
+}
+
+.inner-service {
+  width: 65%;
+  float: left;
+  height: 100%;
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.sidebar {
+  display: inline-block;
+  width: 25%;
+  text-align: right;
+  height: 100%;
+  ul {
+    list-style: none;
+    a {
+      font-size: 1.5em;
+      color: grey;
+      padding: 1% 10%;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.services-header {
+  background-image: url("serv_header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  h1 {
+    margin: 0;
+    text-align: -webkit-center;
+    padding: 5% 0;
+    color: white;
+    font-size: 4em;
+    text-shadow: 1px 1px grey
+  }
+}
+
+//mobile sidebar
+@media screen and (max-width: 550px) {
+  #sidebarDropdown {
+    display: none;
+    background-color: #009688;
+    padding: 2%;
+    a {
+      color: white;
+    }
+  }
+  .sidebar {
+    display: block;
+    position: absolute;
+    text-align: inherit;
+    width: 85%;
+  }
+  .inner-service {
+    width: 100%;
+    padding-top: 20%;
+  }
+}
